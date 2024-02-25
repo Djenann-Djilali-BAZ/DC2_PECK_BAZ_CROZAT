@@ -1,0 +1,84 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ /* Styles pour la barre de navigation */
+ nav {
+  background-color: #333; /* Couleur de fond de la barre de navigation */
+  padding: 10px; /* Espacement intérieur de la barre de navigation */
+  text-align: center; /* Centrer le contenu horizontalement */
+}
+
+ul {
+  list-style-type: none; /* Supprimer les puces de la liste */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Utiliser flexbox pour aligner les éléments de la liste */
+  justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+/* Styles pour chaque élément de la liste */
+li {
+  display: inline; /* Afficher les éléments de la liste en ligne */
+  margin-right: 20px; /* Marge à droite entre les éléments de la liste */
+}
+
+/* Styles pour les boutons de la barre de navigation */
+button {
+  color: #fff; /* Couleur du texte des boutons */
+  background-color: #555; /* Couleur de fond des boutons */
+  border: none; /* Supprimer la bordure des boutons */
+  padding: 8px 12px; /* Espacement intérieur des boutons */
+  border-radius: 5px; /* Bord arrondi des boutons */
+  cursor: pointer; /* Curseur pointeur au survol des boutons */
+}
+
+/* Styles pour le champ de recherche de la barre de navigation */
+input[type="text"] {
+  padding: 6px; /* Espacement intérieur du champ de texte */
+  border-radius: 5px; /* Bord arrondi du champ de texte */
+  border: 1px solid #ccc; /* Bordure du champ de texte */
+}
+
+/* Styles pour le menu déroulant de la barre de navigation */
+select {
+  padding: 6px; /* Espacement intérieur du menu déroulant */
+  border-radius: 5px; /* Bord arrondi du menu déroulant */
+  border: 1px solid #ccc; /* Bordure du menu déroulant */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement les éléments */
+}
+
+.film-list {
+  display: flex;
+  flex-wrap: wrap; /* Les films seront en colonnes */
+  justify-content: center; /* Centrer les colonnes horizontalement */
+  gap: 20px; /* Espacement entre les colonnes */
+  padding-top: 40px; /* Augmenter la marge au-dessus des affiches */
+}
+
+.film {
+  flex: 0 0 calc(25% - 20px); /* Largeur dynamique pour chaque colonne, avec un espace de 20px entre les colonnes */
+  margin-bottom: 40px; /* Augmenter la marge en dessous des affiches */
+  text-align: center;
+}
+
+.film img {
+  width: 100%; /* Image occupant toute la largeur de la colonne */
+  height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+  border-radius: 5px;
+}
